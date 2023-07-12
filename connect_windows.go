@@ -28,14 +28,14 @@ func (s *Server) run() error {
 
 	s.status = Listening
 
-	s.connChannel = make(chan bool)
+	// s.connChannel = make(chan bool)
 
 	go s.acceptLoop()
 
-	err2 := s.connectionTimer()
-	if err2 != nil {
-		return err2
-	}
+	// err2 := s.connectionTimer()
+	// if err2 != nil {
+	// 	return err2
+	// }
 
 	return nil
 
